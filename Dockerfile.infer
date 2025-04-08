@@ -1,7 +1,15 @@
+FROM python:3.9-slim
 WORKDIR /app
 COPY requirements.txt .
 COPY server.py .
-FROM python:3.9-slim
-CMD ["python", "server.py"]
 RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python", "server.py"]
 EXPOSE 8080
+
+# Reorder of instructions
+
+# To build:
+# docker build -t sklearn_serve:v1 -f Dockerfile.serve .
+
+# run command:
+# docker run --rm -p 8080:8080/tcp -v ./app/models:/app/models sklearn_serve:v1
