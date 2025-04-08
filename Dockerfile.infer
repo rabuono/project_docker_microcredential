@@ -9,7 +9,7 @@ EXPOSE 8080
 # Reorder of instructions
 
 # To build:
-# docker build -t sklearn_serve:v1 -f Dockerfile.serve .
+# docker build -t sklearn_serve:v1 -f Dockerfile.infer .
 
 # run command:
 # docker run --rm -p 8080:8080/tcp -v ./app/models:/app/models sklearn_serve:v1
