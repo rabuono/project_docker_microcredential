@@ -26,3 +26,12 @@ It results in the `iris_model.pkl` file to be used by the next step.
 Building image and running container commands are in Dockerfile.infer
 The message `Welcome to Docker Lab` can be found at http://localhost:8080
 
+
+- Login with  
+`docker login`
+- Tagging images
+`docker tag sklearn_train:v1 rabuono/skelearn_train:v1`
+`docker tag sklearn_serve:v1 rabuono/skelearn_serve:v1`
+- Pushing images
+`docker push rabuono/skelearn_train:v1`
+`docker push rabuono/skelearn_serve:v1`
