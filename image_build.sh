@@ -16,10 +16,10 @@ LOG_DIR="$SCRIPT_DIR/logs"
 mkdir -p $LOG_DIR
 
 # Pull Docker images using Apptainer and save logs
-echo "Pulling training image..."
-apptainer pull $TRAIN_IMG > $LOG_DIR/train_image_build.log 2>&1
+echo "Building training image..."
+apptainer build --fakeroot model-train.sif $TRAIN_IMG > $LOG_DIR/train_image_build.log 2>&1
 
-echo "Pulling serving image..."
-apptainer pull $SERVE_IMG > $LOG_DIR/serve_image_build.log 2>&1
+echo "Building serving image..."
+apptainer build --fakeroot model-serve.sif $SERVE_IMG > $LOG_DIR/serve_image_build.log 2>&1
 
 echo 'Job finished'
