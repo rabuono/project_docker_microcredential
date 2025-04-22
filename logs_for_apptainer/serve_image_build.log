@@ -1,0 +1,29 @@
+INFO:    User not listed in /etc/subuid, trying root-mapped namespace
+INFO:    The %post section will be run under the fakeroot command
+INFO:    Starting build...
+Copying blob sha256:8a628cdd7ccc83e90e5a95888fcb0ec24b991141176c515ad101f12d6433eb96
+Copying blob sha256:1a2929da74e607ea6ef07742bf12f320bf1a3dbae71e551ac6ca616497bcac33
+Copying blob sha256:184a776449911524150de3a331d4c3eafe528bd2fc50c9b97326bf3fb8e1d4f6
+Copying blob sha256:12593af8cbd21b1576220a9427a4348a814d745e8be2f1e0c291feeccef9435f
+Copying blob sha256:97e7d544f1102f53e73772843cd535a15024771fd751e3e7de7ac5601d82807e
+Copying blob sha256:611c532b1d06dca8d109405f17c9d6dad162181677ba59bbb30410597614d4f4
+Copying blob sha256:3530cc4bfea2e74a5ef8726ad907b4fdf3b12cc8ae116b0c15f283d5e831958c
+Copying blob sha256:4c4dc7d981d4dbdbf79828bfbd458638c207ff80825abd8fc5d84b0e4606c6e7
+Copying config sha256:a563cebff51e0fee3b1963aec0a25c4f7a02b2d1c5fd36bbe8074bed79a48b1a
+Writing manifest to image destination
+2025/04/22 13:42:29  info unpack layer: sha256:8a628cdd7ccc83e90e5a95888fcb0ec24b991141176c515ad101f12d6433eb96
+2025/04/22 13:42:30  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2025/04/22 13:42:30  warn xattr{/data/tmp/81753/build-temp-2370069137/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2025/04/22 13:42:51  info unpack layer: sha256:12593af8cbd21b1576220a9427a4348a814d745e8be2f1e0c291feeccef9435f
+2025/04/22 13:42:53  warn xattr{var/cache/apt/archives/partial} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2025/04/22 13:42:53  warn xattr{/data/tmp/81753/build-temp-2370069137/rootfs/var/cache/apt/archives/partial} destination filesystem does not support xattrs, further warnings will be suppressed
+2025/04/22 13:42:53  info unpack layer: sha256:1a2929da74e607ea6ef07742bf12f320bf1a3dbae71e551ac6ca616497bcac33
+2025/04/22 13:43:05  warn xattr{var/log/apt/term.log} ignoring ENOTSUP on setxattr "user.rootlesscontainers"
+2025/04/22 13:43:05  warn xattr{/data/tmp/81753/build-temp-2370069137/rootfs/var/log/apt/term.log} destination filesystem does not support xattrs, further warnings will be suppressed
+2025/04/22 13:43:05  info unpack layer: sha256:97e7d544f1102f53e73772843cd535a15024771fd751e3e7de7ac5601d82807e
+2025/04/22 13:43:05  info unpack layer: sha256:3530cc4bfea2e74a5ef8726ad907b4fdf3b12cc8ae116b0c15f283d5e831958c
+2025/04/22 13:43:05  info unpack layer: sha256:184a776449911524150de3a331d4c3eafe528bd2fc50c9b97326bf3fb8e1d4f6
+2025/04/22 13:43:05  info unpack layer: sha256:611c532b1d06dca8d109405f17c9d6dad162181677ba59bbb30410597614d4f4
+2025/04/22 13:43:05  info unpack layer: sha256:4c4dc7d981d4dbdbf79828bfbd458638c207ff80825abd8fc5d84b0e4606c6e7
+INFO:    Creating SIF file...
+INFO:    Build complete: model-serve.sif
