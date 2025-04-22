@@ -58,6 +58,6 @@ Leading to the two commands:
 ## Building apptainer images  
 - Run `image_build.sh` to build by downloading from docker hub  
 - Produces two log files in addition to the slurm.out file  
-- Alternative `image_build_ugent.sh` file provided to buildin in HPC Ugent, that leads to no `--fakeroot` related `xattrs` warnings. Corresponding folder for HPC Ugent logs is also provided. 
+- Alternative `image_build_ugent.sh` file provided to building in HPC Ugent, that leads to no `--fakeroot` related `xattrs` warnings. Corresponding folder for HPC Ugent logs is also provided. 
 
 
