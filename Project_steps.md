@@ -55,4 +55,7 @@ Leading to the two commands:
 `docker push rabuono/skelearn_train:v2`  
 `docker push rabuono/skelearn_serve:v2`  
 
+## Building apptainer images
+- Run `image_build.sh` to build by downloading from docker hub
+- Produces two log files in addition to the slurm.out file
 
