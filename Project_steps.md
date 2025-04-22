@@ -59,5 +59,6 @@ Leading to the two commands:
 - Run `image_build.sh` to build by downloading from docker hub  
 - Produces two log files in addition to the slurm.out file  
 - Alternative `image_build_ugent.sh` file provided to building in HPC Ugent, that leads to no `--fakeroot` related `xattrs` warnings. Corresponding folder for HPC Ugent logs is also provided. 
+- The script requires that the path is given in the command to run the script. For example: `sbatch image_build.sh </path/to/data>`, where `<path/to/data>` is the path to where the images should be built.
 
 
