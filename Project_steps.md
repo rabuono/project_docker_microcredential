@@ -41,7 +41,7 @@ The message `Welcome to Docker Lab` can be found at http://localhost:8080
 Running the following command to build v2 for the images, so that they can support multiple platforms:  
 `docker buildx build --platform linux/amd64,linux/arm64 -t mydockerimage:latest .`  
 
-Leading to the two commands:  
+Leading to the two following commands, so that the resulting images can be used in linux/amd64 and linux/arm64 based platforms:  
 `docker buildx build --platform linux/amd64,linux/arm64 -t sklearn_train:v2 -f Dockerfile.train .`  
 `docker buildx build --platform linux/amd64,linux/arm64 -t sklearn_serve:v2 -f Dockerfile.infer .`  
 
